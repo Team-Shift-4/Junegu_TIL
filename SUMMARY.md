@@ -55,4 +55,7 @@
 * [Rocky](linux/rocky/README.md)
   * [Installing Rocky Linux (V8)](linux/rocky/installing-rocky-linux-v8.md)
   * [Installing Rocky Linux (V9)](linux/rocky/installing-rocky-linux-v9.md)
-* [CentOS](linux/centos.md)
+* [CentOS](linux/centos/README.md)
+  * [Installing CentOS (V7)](linux/centos/installing-centos-v7.md)
+  * [Installing CentOS (V8)](linux/centos/installing-centos-v8.md)
+  * [Installing CentOS (V9)](linux/centos/installing-centos-v9.md)

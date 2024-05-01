@@ -1,4 +1,4 @@
-# Installing Loki Linux (V8)
+# Installing Rocky Linux (V8)
 
 ISO 다운로드 사이트 : https://rockylinux.org/download/
 
@@ -10,14 +10,14 @@ ISO 다운로드 사이트 : https://rockylinux.org/download/
 
 1. 새로 만들기(N) 버튼을 눌려 가상 머신을 만든다.
 
-<figure><img src="../../.gitbook/assets/1-2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-2 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 새로 만들기 : 신규 VM을 설치하고 생성한다.
 * 추가 : 기존 만들어진 VM 을 추가한다.
 
 2. 신규 가상머신 설정을 한다.
 
-<figure><img src="../../.gitbook/assets/1-3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-3 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 이름 : 가상머신 이름
 * 폴더 : 만들어 가상머신 파일을 저장할 공간
@@ -25,20 +25,20 @@ ISO 다운로드 사이트 : https://rockylinux.org/download/
 
 3. 설치 계정 및 옵션 설정을 한다.
 
-<figure><img src="../../.gitbook/assets/1-4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-4 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 사용자 이름 및 암호 : 서버에 설정할 초기 계정과 비밀번호
 * 게스트 확장 : 네트워크 및 드라이브 마운트를 위한 추가 설정 설치
 
 4. 하드웨어를 설정 한다.
 
-<figure><img src="../../.gitbook/assets/1-5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-5 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 테스트 및 기본 설정용으로 사용할 예정으로 메모리는 4096MB, Processors 는 2로 설정한다.
 
 5. 하드디스크크 설정
 
-<figure><img src="../../.gitbook/assets/1-6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-6 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 하드디스크 용량 설정
 * 지금 새 가상 하드 디스크 만들기 : 초기 기본 고정 하드 용량 / 설정한 만큼 이미지 파일이 해당 용량으로 잡힌다.
@@ -47,7 +47,7 @@ ISO 다운로드 사이트 : https://rockylinux.org/download/
 
 6. 최종 확인 밑 Finish
 
-<figure><img src="../../.gitbook/assets/1-7 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-7 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 설정한 정보들 확인 후 이상 없으로 \[완료] 버튼 클릭한다.
 
@@ -59,7 +59,7 @@ ISO 다운로드 사이트 : https://rockylinux.org/download/
 
 8. 네트워크 설정
 
-<figure><img src="../../.gitbook/assets/1-9 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-9 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 어댑터 1,2 -> 네트워크 어댑터 사용하기 -> NAT / 호스트 전용 어댑터 -> 무작위 모드 모두 허용
 
