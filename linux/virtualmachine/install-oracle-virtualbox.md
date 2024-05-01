@@ -1,4 +1,4 @@
-# 오라클 버추얼박스 설치
+# Install Oracle VirtualBox
 
 ### VirtualBox
 
@@ -23,34 +23,34 @@
 
 * 사이트에 접속 후 다운로드 버튼을 누릅니다.
 
-<figure><img src="../../.gitbook/assets/1-1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 자신의 운영체제 맞 설치 파일을 다운로드 합니다.
 
-<figure><img src="../../.gitbook/assets/1-2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-2 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 버추얼박스 설치 프로그램 실행 후 Next 버튼을 클릭합니다.
 
-<figure><img src="../../.gitbook/assets/1-3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-3 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 설치 경로 및 설치할 항목들을 선택
 
 설치 항목은 기본으로 설정하고 설치 경로 변경은 Browse 버튼을 클릭해서 변경 가능합니다.
 
-<figure><img src="../../.gitbook/assets/1-4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-4 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 가상 네트워크 구성을 위해 네트워크 리셋한다는 메시지 확인 후 Yes 클릭 후 계속 진행합니다.
 
-<figure><img src="../../.gitbook/assets/1-5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-5 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 설치 확인 후 Install 버튼을 클릭 합니다.
 
-<figure><img src="../../.gitbook/assets/1-6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-6 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * VirtualBox 설치 완료 확인 합니다.
 
-<figure><img src="../../.gitbook/assets/1-7 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-7 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 설치완료 후 VirtualBox 실행 정상적인 설치 완료 후 버추얼박스를 실행하면 아래의 화면을 확인할 수 있습니다.
 
-<figure><img src="../../.gitbook/assets/1-8 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-8 (1) (1).png" alt=""><figcaption></figcaption></figure>

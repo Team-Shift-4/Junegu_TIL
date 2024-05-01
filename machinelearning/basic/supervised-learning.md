@@ -1,4 +1,4 @@
-# 지도학습
+# Supervised learning
 
 ## 머신러닝(2주차)
 
@@ -235,7 +235,7 @@ plt.ylabel('weight')
 plt.show()
 ```
 
-<figure><img src="../../.gitbook/assets/2-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2-1 (4).png" alt=""><figcaption></figcaption></figure>
 
 그 후, 훈련 데이터와 테스트 데이터를 넣어 모델을 테스트 해 보면 정상적인 결과가 나오게 된다.
 

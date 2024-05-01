@@ -3,52 +3,56 @@
 ## Oracle
 
 * [Basic](README.md)
-  * [오라클이란?](oracle/basic/undefined.md)
+  * [What is an Oracle?](oracle/basic/what-is-an-oracle.md)
 * [Architecture](oracle/architecture/README.md)
-  * [오라클 구조](oracle/architecture/undefined.md)
+  * [Oracle Structure](oracle/architecture/oracle-structure.md)
 
 ## Kotlin
 
 * [Basic](kotlin/basic/README.md)
-  * [코틀린 이란?](kotlin/basic/undefined.md)
-  * [기본문법](kotlin/basic/undefined-1.md)
-  * [제어문](kotlin/basic/undefined-2.md)
-  * [클래스](kotlin/basic/undefined-3.md)
-  * [함수](kotlin/basic/undefined-4.md)
+  * [What is Kotlin?](kotlin/basic/what-is-kotlin.md)
+  * [Basic grammar](kotlin/basic/basic-grammar.md)
+  * [Conditions](kotlin/basic/conditions.md)
+  * [Class](kotlin/basic/class.md)
+  * [Function](kotlin/basic/function.md)
 
 ## SPRING
 
 * [Basic](spring/basic/README.md)
-  * [스프링부트란?](spring/basic/undefined.md)
-  * [게시판 생성](spring/basic/undefined-1.md)
-  * [게시글 조회](spring/basic/undefined-2.md)
-  * [게시글 수정](spring/basic/undefined-3.md)
-  * [게시글 삭제](spring/basic/undefined-4.md)
-  * [REST API와 JSON](spring/basic/rest-api-json.md)
+  * [What is a springboot?](spring/basic/what-is-a-springboot.md)
+  * [Create a bulletin board](spring/basic/create-a-bulletin-board.md)
+  * [View posts](spring/basic/view-posts.md)
+  * [Edit a post](spring/basic/edit-a-post.md)
+  * [Delete a post](spring/basic/delete-a-post.md)
+  * [REST API and JSON](spring/basic/rest-api-and-json.md)
 
 ## Computer
 
 * [OperatingSystem](computer/operatingsystem/README.md)
-  * [운영체제](computer/operatingsystem/undefined.md)
+  * [Operating system](computer/operatingsystem/operating-system.md)
 
 ## Network
 
 * [Basic](network/basic/README.md)
-  * [네트워크란](network/basic/undefined.md)
+  * [What is a network?](network/basic/what-is-a-network.md)
 
 ## MachineLearning
 
 * [Basic](machinelearning/basic/README.md)
-  * [인공지능이란?](machinelearning/basic/undefined.md)
-  * [지도학습](machinelearning/basic/undefined-1.md)
-  * [분류/회귀](machinelearning/basic/undefined-2.md)
-  * [선형/다중회귀](machinelearning/basic/undefined-3.md)
-  * [로지스틱 회귀](machinelearning/basic/undefined-4.md)
-  * [인공신경망](machinelearning/basic/undefined-5.md)
+  * [What is artificial intelligence?](machinelearning/basic/what-is-artificial-intelligence.md)
+  * [Supervised learning](machinelearning/basic/supervised-learning.md)
+  * [Classification/Regression](machinelearning/basic/classification-regression.md)
+  * [Linear/Multiple Regression](machinelearning/basic/linear-multiple-regression.md)
+  * [Logistic regression](machinelearning/basic/logistic-regression.md)
+  * [Artificial neural networks](machinelearning/basic/artificial-neural-networks.md)
 
 ## Linux
 
-* [VirtualMachine](linux/virtualmachine/README.md)
-  * [오라클 버추얼박스 설치](linux/virtualmachine/undefined.md)
 * [Linux](linux/linux/README.md)
   * [Unix / Linux](linux/linux/unix-linux.md)
+* [VirtualMachine](linux/virtualmachine/README.md)
+  * [Install Oracle VirtualBox](linux/virtualmachine/install-oracle-virtualbox.md)
+* [Rocky](linux/rocky/README.md)
+  * [Installing Loki Linux (V8)](linux/rocky/installing-loki-linux-v8.md)
+  * [Installing Loki Linux (V9)](linux/rocky/installing-loki-linux-v9.md)
+* [CentOS](linux/centos.md)
