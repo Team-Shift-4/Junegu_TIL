@@ -53,6 +53,6 @@
 * [VirtualMachine](linux/virtualmachine/README.md)
   * [Install Oracle VirtualBox](linux/virtualmachine/install-oracle-virtualbox.md)
 * [Rocky](linux/rocky/README.md)
-  * [Installing Loki Linux (V8)](linux/rocky/installing-loki-linux-v8.md)
-  * [Installing Loki Linux (V9)](linux/rocky/installing-loki-linux-v9.md)
+  * [Installing Rocky Linux (V8)](linux/rocky/installing-rocky-linux-v8.md)
+  * [Installing Rocky Linux (V9)](linux/rocky/installing-rocky-linux-v9.md)
 * [CentOS](linux/centos.md)
