@@ -2,8 +2,6 @@
 
 ### 본 프로젝트는 Centos 8 를 기준으로 작성한 문서이다.
 
-<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
-
 * 시작하기 전에 자신의 IP 주소, 넷마스크 주소, 그리고 브로드캐스트 주소를 확인해야 합니다.
 * 아이피 주소를 확인하는 명령어는 운영 체제에 따라 다릅니다.&#x20;
 * **Windows 운영 체제:**
