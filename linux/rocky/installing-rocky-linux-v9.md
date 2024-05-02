@@ -8,7 +8,7 @@ ISO 다운로드 사이트 : https://rockylinux.org/download/
 
 1. 새로 만들기(N) 버튼을 눌려 가상 머신을 만든다.
 
-<figure><img src="../../.gitbook/assets/1-2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-2 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 새로 만들기 : 신규 VM을 설치하고 생성한다.
 * 추가 : 기존 만들어진 VM 을 추가한다.

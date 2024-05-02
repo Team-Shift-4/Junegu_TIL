@@ -1,0 +1,2 @@
+# CentOS Static IP Setting
+

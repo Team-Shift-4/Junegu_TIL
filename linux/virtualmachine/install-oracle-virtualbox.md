@@ -23,11 +23,11 @@
 
 * 사이트에 접속 후 다운로드 버튼을 누릅니다.
 
-<figure><img src="../../.gitbook/assets/1-1 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-1 (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 자신의 운영체제 맞 설치 파일을 다운로드 합니다.
 
-<figure><img src="../../.gitbook/assets/1-2 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1-2 (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 버추얼박스 설치 프로그램 실행 후 Next 버튼을 클릭합니다.
 
