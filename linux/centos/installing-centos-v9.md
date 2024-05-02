@@ -76,43 +76,56 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
+* 한국어를 선택 한다.
+* 키보드 레이아웃은 한국어 (101/104키 호환)을 추가한 후 기본값으로 선택 한다.
 
+3. 설치 설정
 
 <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
+* 주황색 삼각형 아이콘이 뜨는것들만 설정을 해주면 설치 시작을 할 수 있다.
 
+4. 운영체제를 설치할 경로를 선택한다.
 
 <figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
+* 디스크 파티션 설정 할수있다.
+  * **디스크 추가(A):** 사용 가능한 특수 디스크 또는 네트워크 디스크 추가한다.
+  * **자동 설정(A):** Rocky Linux 설치 프로그램에서 기본 저장소를 자동으로 설정한다.
+* 디스크를 고른 후 완료를 누른다.
 
+5. 사용자 설정
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
+* CentOS는 설치를 하면서 사용자와 ROOT 비밀번호를 설정할 수 있다.
 
+6. 네트워크 설정
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
+* **이더넷(enp0s3)** : 관리용 네트워크로 대시보드와 API에 접속할 수 있다.
+* **이더넷(enp0s8)** : 인터넷과 외부에서 접속할 수 있는 유동 IP의 통로 역할을 한다.
+* CentOS 9 버전에서는 enp0s3과 enp0s8둘다 자동으로 켬 상태로 되어있다.
 
+7. 소프트웨어 선택
 
 <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
-
+8. 설치 시작
 
 <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
+* 설치가 끝나면 재부팅을 해준다.
 
+9. 설치 완료
 
 <figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
+* 사용자 로그인 후 메인 화면이 뜨면 설치 완료이다.
