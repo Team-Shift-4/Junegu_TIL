@@ -65,7 +65,7 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 ### CentOS(V7) 설치
 
-1. 인스톨 시작
+1. 설치시작
 
 <figure><img src="../../.gitbook/assets/1-1.png" alt=""><figcaption></figcaption></figure>
 

@@ -65,3 +65,54 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 ### CentOS(V9) 설치
 
+1. 설치시작
+
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
+* Install CentOS 9 : 이 옵션을 선택하면 CentOS 9을 설치합니다. 선택하면 시스템에 CentOS 9이 설치되고, 설치 프로세스가 시작된다.
+* Test this media & install CentOS 9 : 이 옵션을 선택하면 부팅 가능한 미디어의 무결성을 테스트한 후 CentOS 9을 설치다. 미디어가 올바르게 작동하는지 확인하기 위해 미디어를 테스트한 후에 CentOS 9을 설치할 수 있습니다. 이 옵션을 선택하면 시스템이 부팅 가능한 미디어를 테스트하고, 테스트가 완료되면 CentOS 9 설치 프로세스가 시작된다.
+
+2. 언어 설정
+
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+

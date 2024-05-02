@@ -65,3 +65,56 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 ### CentOS(V8) 설치
 
+1. 설치시작
+
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+* Install CentOS 8 : 이 옵션을 선택하면 CentOS 8을 설치합니다. 선택하면 시스템에 CentOS 8이 설치되고, 설치 프로세스가 시작된다.
+* Test this media $ install CentOS 8 : 이 옵션을 선택하면 부팅 가능한 미디어의 무결성을 테스트한 후 CentOS 8을 설치다. 미디어가 올바르게 작동하는지 확인하기 위해 미디어를 테스트한 후에 CentOS 8을 설치할 수 있습니다. 이 옵션을 선택하면 시스템이 부팅 가능한 미디어를 테스트하고, 테스트가 완료되면 CentOS 8 설치 프로세스가 시작된다.
+
+2. 언어 설정
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
