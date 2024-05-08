@@ -2,7 +2,7 @@
 
 ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.centos.org/download/)
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 본 프로젝트는 CentOS-7-x86\_64-DVD-2009.ISO를 기준으로 작성한 문서이다.
 
@@ -10,14 +10,14 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 1. 새로 만들기(N) 버튼을 눌려 가상 머신을 만든다.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 새로 만들기 : 신규 VM을 설치하고 생성한다.
 * 추가 : 기존 만들어진 VM 을 추가한다.
 
 2. 신규 가상머신 설정을 한다.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 이름 : 가상머신 이름
 * 폴더 : 만들어 가상머신 파일을 저장할 공간
@@ -25,20 +25,20 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 3. 설치 계정 및 옵션 설정을 한다.
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 사용자 이름 및 암호 : 서버에 설정할 초기 계정과 비밀번호
 * 게스트 확장 : 네트워크 및 드라이브 마운트를 위한 추가 설정 설치
 
 4. 하드웨어를 설정 한다.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 테스트 및 기본 설정용으로 사용할 예정으로 메모리는 4096MB, Processors 는 2로 설정한다.
 
 5. 하드디스 설정
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 하드디스크 용량 설정
 * 지금 새 가상 하드 디스크 만들기 : 초기 기본 고정 하드 용량 / 설정한 만큼 이미지 파일이 해당 용량으로 잡힌다.
@@ -47,7 +47,7 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 6. 최종 확인 밑 Finish
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 설정한 정보들 확인 후 이상 없으로 \[완료] 버튼 클릭한다.
 

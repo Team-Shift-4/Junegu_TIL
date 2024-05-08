@@ -61,3 +61,8 @@
   * [Installing CentOS (V8)](linux/centos/installing-centos-v8.md)
   * [Installing CentOS (V9)](linux/centos/installing-centos-v9.md)
   * [CentOS Static IP Setting](linux/centos/centos-static-ip-setting.md)
+
+## ANDROID
+
+* [Hello World](android/hello-world.md)
+* [Layouts](android/layouts.md)
