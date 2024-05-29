@@ -7,6 +7,28 @@
 * [Architecture](oracle/architecture/README.md)
   * [Oracle Structure](oracle/architecture/oracle-structure.md)
 
+## Linux
+
+* [Linux](linux/linux/README.md)
+  * [Unix / Linux](linux/linux/unix-linux.md)
+* [VirtualMachine](linux/virtualmachine/README.md)
+  * [Install Oracle VirtualBox](linux/virtualmachine/install-oracle-virtualbox.md)
+* [Rocky](linux/rocky/README.md)
+  * [Installing Rocky Linux (V8)](linux/rocky/installing-rocky-linux-v8.md)
+  * [Installing Rocky Linux (V9)](linux/rocky/installing-rocky-linux-v9.md)
+  * [Rocky Linux Static IP Setting ](linux/rocky/rocky-linux-static-ip-setting.md)
+* [CentOS](linux/centos/README.md)
+  * [Installing CentOS (V7)](linux/centos/installing-centos-v7.md)
+  * [Installing CentOS (V8)](linux/centos/installing-centos-v8.md)
+  * [Installing CentOS (V9)](linux/centos/installing-centos-v9.md)
+  * [CentOS Static IP Setting](linux/centos/centos-static-ip-setting.md)
+
+## ANDROID
+
+* [Hello World](android/hello-world.md)
+* [Layouts](android/layouts.md)
+* [Widget and listener](android/widget-and-listener.md)
+
 ## Kotlin
 
 * [Basic](kotlin/basic/README.md)
@@ -46,24 +68,3 @@
   * [Linear/Multiple Regression](machinelearning/basic/linear-multiple-regression.md)
   * [Logistic regression](machinelearning/basic/logistic-regression.md)
   * [Artificial neural networks](machinelearning/basic/artificial-neural-networks.md)
-
-## Linux
-
-* [Linux](linux/linux/README.md)
-  * [Unix / Linux](linux/linux/unix-linux.md)
-* [VirtualMachine](linux/virtualmachine/README.md)
-  * [Install Oracle VirtualBox](linux/virtualmachine/install-oracle-virtualbox.md)
-* [Rocky](linux/rocky/README.md)
-  * [Installing Rocky Linux (V8)](linux/rocky/installing-rocky-linux-v8.md)
-  * [Installing Rocky Linux (V9)](linux/rocky/installing-rocky-linux-v9.md)
-  * [Rocky Linux Static IP Setting ](linux/rocky/rocky-linux-static-ip-setting.md)
-* [CentOS](linux/centos/README.md)
-  * [Installing CentOS (V7)](linux/centos/installing-centos-v7.md)
-  * [Installing CentOS (V8)](linux/centos/installing-centos-v8.md)
-  * [Installing CentOS (V9)](linux/centos/installing-centos-v9.md)
-  * [CentOS Static IP Setting](linux/centos/centos-static-ip-setting.md)
-
-## ANDROID
-
-* [Hello World](android/hello-world.md)
-* [Layouts](android/layouts.md)
