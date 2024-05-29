@@ -23,17 +23,20 @@
   * [Installing CentOS (V9)](linux/centos/installing-centos-v9.md)
   * [CentOS Static IP Setting](linux/centos/centos-static-ip-setting.md)
 
-## ANDROID
+## Android
 
-* [Hello World](android/hello-world.md)
-* [Layouts](android/layouts.md)
-* [Widget and listener](android/widget-and-listener.md)
-* [WidgetAndListener2](android/widgetandlistener2.md)
-* [Activity And Intent](android/activity-and-intent.md)
-* [RecyclerView](android/recyclerview.md)
-* [SharedPreferenceAndViewModel](android/sharedpreferenceandviewmodel.md)
-* [Permissions](android/permissions.md)
-* [Using Fragments](android/using-fragments.md)
+* [Basic](android/basic/README.md)
+  * [Hello World](android/basic/hello-world.md)
+  * [Layouts](android/basic/layouts.md)
+  * [Widget and listener](android/basic/widget-and-listener.md)
+  * [WidgetAndListener2](android/basic/widgetandlistener2.md)
+  * [Activity And Intent](android/basic/activity-and-intent.md)
+  * [RecyclerView](android/basic/recyclerview.md)
+  * [SharedPreferenceAndViewModel](android/basic/sharedpreferenceandviewmodel.md)
+  * [Permissions](android/basic/permissions.md)
+  * [Using Fragments](android/basic/using-fragments.md)
+
+## ANDROID
 
 ## Kotlin
 

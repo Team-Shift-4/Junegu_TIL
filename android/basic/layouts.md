@@ -67,7 +67,7 @@
 
 #### 주요 Hierarchy
 
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -96,7 +96,7 @@
 * Top/Start(Left)/Bottom/End(Right) 각각 지정할 수도 있다
   * ex) android:paddingTop
 
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -120,26 +120,26 @@
 
 * app/res/layout 폴더에서 우클릭, New > Layout Resource File
 
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 * File name : activity\_main\_linear
 * Root element : LinearLayout
 
-<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 * 이데터 우측 상단 모드 중 편한 화면을 선택. xml은 Code 또는 Split에서 볼 수 있다.
 
-<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 * 현재는 빈 화면 상태
   * inset 을 적용하기위해 아이디를 부여함
   * 필수 속성 : vertical 또는 horizontal
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 * MainActivity.kt 를 다음과 같이 수정 후 앱을 실행하여 빈 화면이 나오는지 확인한다.
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -148,11 +148,11 @@
 * Design 보기에서 드래그 & 드롭으로 추가 후 우측 속성 화면에서 편집.
 * 미세한 조정은 Code 또는 Split에서 코드 단위로 수정
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 * Palette에서 Button 항목을 4번 드래그 하여 다음과 같이 만들어본다.
 
-<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 ### 속성 변경
 
@@ -160,30 +160,30 @@
   * Design 보기의 우측 속성 변경 또는&#x20;
   * Code상에서 수정
 
-<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
 * 각 버튼의 아이디를 다음과 같이 수정하고 Text 속성을 변경하여 출력되는 버튼의 라벨을 변경하라.
   * buttonA, buttonB, buttonC, buttonD
 
-<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ### 레이아웃 속성 변경
 
 * 레이아웃의 속성 중 orientation을 horizontal 로 변경해본다.
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 ### 실습
 
 * LinearLayout과 Button만을 사용하여 다음과 같은 화면을 구성하라
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 * LinearLayout과 Button만을 사용하여 다음과 같은 화면을 구성하라
 
-<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 ## Constraint Layout
 
@@ -192,9 +192,9 @@
 * 기존 레이아웃들의 불편한 점들을 개선한 레이아웃
 * 기본 라이브러리에는 포함되어 있지 않으며 Module의 build.gradle의 dependencies 항목과 libs.versions.toml 다음과 같이 의존성이 추가되어야 사용 가능
 
-<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
 * Iguana 이전 버전의 프로젝트는 Module의 build.gradle에 라이브러리 이름과 버전이 함께 기술된다.
 
@@ -203,12 +203,12 @@
 * 기존 레이아웃들의 불편한 점들을 개선한 레이아웃
 * 각 View는 상/하/좌/우 (Top, Bottom, Left, Right)에 제약점(Constraint)을 가지며 이 제약점을 부모나 다른 View에 연결하여 자신의 위치를 결정한다.
 
-<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
 * 각 View는 반드시 수평, 수직 방향의 제약점이 각각 하나 이상 연결되어야 한다.
   * 각 View를 연결하는 연결선은 스프링과 같이 동작한다.(View를 잡아당긴다.)
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
 * app:layout\_constraintLeft\_toLeftOf="parent" 또는 app:layout\_constraintLeft\_toLeftOf="@ +id/other" 와 같은 형식으로 대상 지정 자신의 제약점\_대상의제약점 형식으로 제약점 연결
 
@@ -216,28 +216,28 @@
 
 * 우측 속성 창에서 수평, 수직의 힘의 비율(bias)을 조절할 수 있으며 amrgin도 설정할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 ### 실습
 
 * HelloWorld를 전체 화면의 위쪽 30%위치, 가로는 가운데 정렬되도록 위치를 수정하라.
 
-<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 * Hello World 문구 하단에 Button을 추가한다.
 * Button은 Hello World와 20dp의 간격을 두고 위치하며 가로로는 가운데 정렬한다.
 
-<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
 * Hello World의 가로정렬도 왼쪽으로 0.3 위치에 배치한다
 * Button은 세로 정렬은 유지하고 왼쪽 시작 부분을 HelloWorld와 맞춘다
 
-<figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 * activity\_main.xml에서 constraint layout을 이용해 다음과 같이 위젯들을 배치하고 앱 실행 시 이 화면이 출력되도록 수정하라.
 * 글자를 입력할 수 있는 위젯은 Palette의 Text 분류에 있으며 그 중 Number를 사용한다
 * 각 위젯의 아이디는 다음과 같다
 
-<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>

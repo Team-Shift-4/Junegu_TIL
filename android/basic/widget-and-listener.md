@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
 * Module:app 의 build.gradle.kts에 다음과 같은 내용을 추가하면 layout 폴더 안에 있는 파일에 대한 클래스가 자동으로 생성되며 이를 이용해 view 객체를 참조할 수 있다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 (실행사사진진 한개 더)
 
@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
 * 현재의 기능을 유지하면서 하나의 함수에서 처리하도록 리팩토링 해 본다.
   * 각 리스너에 전달되는 View 객체(it, view 등의 변수)의 id를 이용하면 어떤 버튼이 클릭되었는지 확인 할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 
 
