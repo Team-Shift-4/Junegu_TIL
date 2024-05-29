@@ -28,6 +28,12 @@
 * [Hello World](android/hello-world.md)
 * [Layouts](android/layouts.md)
 * [Widget and listener](android/widget-and-listener.md)
+* [WidgetAndListener2](android/widgetandlistener2.md)
+* [Activity And Intent](android/activity-and-intent.md)
+* [RecyclerView](android/recyclerview.md)
+* [SharedPreferenceAndViewModel](android/sharedpreferenceandviewmodel.md)
+* [Permissions](android/permissions.md)
+* [Using Fragments](android/using-fragments.md)
 
 ## Kotlin
 
