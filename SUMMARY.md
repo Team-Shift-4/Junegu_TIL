@@ -36,8 +36,6 @@
   * [Permissions](android/basic/permissions.md)
   * [Using Fragments](android/basic/using-fragments.md)
 
-## ANDROID
-
 ## Kotlin
 
 * [Basic](kotlin/basic/README.md)
