@@ -55,8 +55,6 @@ class MainActivity : AppCompatActivity() {
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-(실행사사진진 한개 더)
-
 * 클래스 이름은 파일 이름을 이용해 자동으로 생성된다
   * activity\_main.xml ==> ActivityMainBinding
 
@@ -73,12 +71,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.textView.text="Hello"
+        binding.textView.text="Hi!"
     }
 }
 ```
 
-(실행 사진)
+<figure><img src="../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 ### Event and listener
 
@@ -107,9 +105,72 @@ class MainActivity : AppCompatActivity() {
 * Mul : 익명 객체 전달
 * Div : 람다식
 
+```kotlin
+package com.example.helloworld
 
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import com.example.helloworld.databinding.ActivityMainBinding
+import java.lang.NumberFormatException
 
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
 
+        binding.buttonAdd.setOnClickListener(this)
+        binding.buttonSub.setOnClickListener(listener)
+        // 인명 객체 전달
+        binding.buttonMul.setOnClickListener(object : View.OnClickListener{
+            override  fun onClick(p0: View?) {
+                try {
+                    val n1 = binding.editTextNumber.text.toString().toDouble()
+                    val n2 = binding.editTextNumber2.text.toString().toDouble()
+                    binding.textViewRsult.text="${n1*n2}"
+                } catch (e:NumberFormatException) {
+
+                }
+            }
+        })
+        // 람다식
+        binding.buttonDiv.setOnClickListener( {
+            try {
+                val n1 = binding.editTextNumber.text.toString().toDouble()
+                val n2 = binding.editTextNumber2.text.toString().toDouble()
+                binding.textViewRsult.text= if(n2!=0.0) "${n1/n2}" else "0.0"
+            } catch (e:NumberFormatException) {
+
+            }
+        })
+    }
+
+    // Activity가 interface를 구현
+    override fun onClick(v: View?) {
+        try {
+            val n1 = binding.editTextNumber.text.toString().toDouble()
+            val n2 = binding.editTextNumber2.text.toString().toDouble()
+            binding.textViewRsult.text="${n1+n2}"
+        } catch (e:NumberFormatException) {
+            return
+        }
+    }
+
+    // 객체를 변수로 전달
+    private val listener = View.OnClickListener {
+        try {
+            val n1 = binding.editTextNumber.text.toString().toDouble()
+            val n2 = binding.editTextNumber2.text.toString().toDouble()
+            binding.textViewRsult.text="${n1-n2}"
+        } catch (e:NumberFormatException) {
+
+        }
+    }
+}
+```
+
+<figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 * 현재 코드는 중복되는 코드가 매우 많은 상태.
 * 현재의 기능을 유지하면서 하나의 함수에서 처리하도록 리팩토링 해 본다.
@@ -117,21 +178,44 @@ class MainActivity : AppCompatActivity() {
 
 <figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
+```kotlin
+package com.example.helloworld
 
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import com.example.helloworld.databinding.ActivityMainBinding
+import java.lang.NumberFormatException
 
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
 
+        binding.buttonAdd.setOnClickListener(this)
+        binding.buttonSub.setOnClickListener(this)
+        binding.buttonMul.setOnClickListener(this)
+        binding.buttonDiv.setOnClickListener(this)
+    }
 
+    override fun onClick(v: View) {
+        try{
+            val n1 = binding.editTextNumber.text.toString().toDouble()
+            val n2 = binding.editTextNumber2.text.toString().toDouble()
+            val result = when(v.id){
+                R.id.buttonAdd -> n1+n2
+                R.id.buttonSub -> n1-n2
+                R.id.buttonMul -> n1*n2
+                else ->  if(n2!=0.0) n1/n2 else 0.0
+            }
+            binding.textViewRsult.text = "$result"
+        }catch(e:NumberFormatException){
+            return
+        }
+    }
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
+<figure><img src="../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
