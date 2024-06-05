@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
 * Module:app 의 build.gradle.kts에 다음과 같은 내용을 추가하면 layout 폴더 안에 있는 파일에 대한 클래스가 자동으로 생성되며 이를 이용해 view 객체를 참조할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * 클래스 이름은 파일 이름을 이용해 자동으로 생성된다
   * activity\_main.xml ==> ActivityMainBinding

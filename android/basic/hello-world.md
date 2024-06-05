@@ -57,29 +57,29 @@
 
 * HelloWorld 프로젝트의 시작점: onCreate 함수부터 시작
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Android Iguana 부터 MainActivity의 기본 코드가 변경됨.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * enableEdgeToEdge
   * 화면이 더 많은 콘텐츠를 표시할 수 있도록 하고자 할 때
   * 툴바, 탭바 등의 UI 요소를 가장자리에 더욱 통합하여 사용자의 작업 영역을 최대화하고자 할 때
   * 전체 화면 모드에서 시스템 UI와 상호 작용을 조정하고자 할 때
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * ViewCompat.setOnApplyWindowInsetsListener(view) { v, insets -> }&#x20;
 * 넓은 화면을 사용할 때 앱 일부가 시스템 아래 그려질 수 있다.
 * 표시줄 인셋 val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
 * 동작 인셋  val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemGestures())
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### HelloWorld 출력
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -78,11 +78,12 @@
 
 ## DataStructure
 
-* [Overview](datastructure/overview.md)
-* [ArrayList](datastructure/arraylist.md)
-* [LinkedList](datastructure/linkedlist.md)
-* [Stack](datastructure/stack.md)
-* [Queue](datastructure/queue.md)
-* [Sort And Search](datastructure/sort-and-search.md)
-* [Tree](datastructure/tree.md)
-* [Graph](datastructure/graph.md)
+* [Basic](datastructure/basic/README.md)
+  * [Overview](datastructure/basic/overview.md)
+  * [ArrayList](datastructure/basic/arraylist.md)
+  * [LinkedList](datastructure/basic/linkedlist.md)
+  * [Stack](datastructure/basic/stack.md)
+  * [Queue](datastructure/basic/queue.md)
+  * [Sort And Search](datastructure/basic/sort-and-search.md)
+  * [Tree](datastructure/basic/tree.md)
+  * [Graph](datastructure/basic/graph.md)
