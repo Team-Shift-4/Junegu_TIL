@@ -132,11 +132,305 @@ class MainActivity : AppCompatActivity() {
 
 * Lifecycle 사용하지 않은 경우의 코드: MainActivity.kt
 
+```kotlin
+package com.example.register
+
+import android.os.Bundle
+import android.util.Log
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
+import com.example.register.databinding.ActivityMainBinding
+
+class MyCycle {
+    fun start() {
+        Log.i("MainActivity", "MyCycle start")
+    }
+
+    fun stop() {
+        Log.i("MainActivity", "MyCycle stop")
+    }
+
+    class MainActivity : AppCompatActivity() {
+        private lateinit var myCycle: MyCycle
+
+        private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+        private val check = Array(MAX) { false }
+        private val radioListener = View.OnClickListener {
+            check[TYPE] = true
+            updateProgress()
+        }
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(binding.root)
+
+            myCycle = MyCycle()
+            binding.progressBar.max = MAX
+            binding.editTextName.addTextChangedListener {
+                check[NAME] = it?.isNotEmpty() == true
+                updateProgress()
+            }
+            binding.editTextPhone.addTextChangedListener {
+                check[PHONE] = it?.isNotEmpty() == true
+                updateProgress()
+            }
+            binding.radioButtonAdult.setOnClickListener(radioListener)
+            binding.radioButtonStudent.setOnClickListener(radioListener)
+            binding.checkBoxService.setOnCheckedChangeListener { _, isChecked ->
+                check[AGREEMENT] = isChecked
+                updateProgress()
+            }
+        }
+
+        override fun onStart() {
+            super.onStart()
+            Log.i("MainActivity", "onStart")
+            myCycle.start()
+        }
+
+        override fun onResume() {
+            super.onResume()
+            Log.i("MainActivity", "onResume")
+
+        }
+
+        override fun onStop() {
+            super.onStop()
+            Log.i("MainActivity", "onStop")
+            myCycle.stop()
+        }
+
+        private fun updateProgress() {
+            val progress = check.count { it }
+            binding.progressBar.progress = progress
+            binding.buttonApply.isEnabled = binding.progressBar.max == progress
+        }
+
+        companion object {
+            const val NAME = 0
+            const val PHONE = 1
+            const val TYPE = 2
+            const val AGREEMENT = 3
+            const val MAX = 4
+        }
+    }
+}
+```
+
+* Lifecycle 사용하기 - libs.versions.toml 수정 및 sync
+
+```gradle
+[versions]
+agp = "8.3.1"
+kotlin = "1.9.0"
+coreKtx = "1.13.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+lifecycle = "2.7.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle-runtime-ktx = {group = "androidx.lifecycle", name="lifecycle-runtime-ktx", version.ref = "lifecycle"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 
 
+```
 
+* Lifecycle 사용하기 build.gradle.kts(Module:app) 수정 및 sync
 
+```gradle
+dependencies {
 
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    // lifecycle
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+
+}
+```
+
+* Lifecycle을 참조하는 경우: MainActivity.kt
+
+```kotlin
+package com.example.register
+
+import android.os.Bundle
+import android.util.Log
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
+import androidx.lifecycle.DefaultLifecycleObserver
+import androidx.lifecycle.LifecycleOwner
+import com.example.register.databinding.ActivityMainBinding
+
+class MyCycle: DefaultLifecycleObserver{
+    override fun onStart(owner: LifecycleOwner) {
+        Log.i("MyCycle", "onStart")
+    }
+
+    override fun onStop(owner: LifecycleOwner) {
+        Log.i("MyCycle", "onStop")
+    }
+}
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var myCycle: MyCycle
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val check = Array(MAX) { false }
+    private val radioListener = View.OnClickListener {
+        check[TYPE] = true
+        updateProgress()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
+
+        myCycle = MyCycle()
+        lifecycle.addObserver(myCycle)
+
+        binding.progressBar.max = MAX
+        binding.editTextName.addTextChangedListener {
+            check[NAME] = it?.isNotEmpty() == true
+            updateProgress()
+        }
+        binding.editTextPhone.addTextChangedListener {
+            check[PHONE] = it?.isNotEmpty() == true
+            updateProgress()
+        }
+        binding.radioButtonAdult.setOnClickListener(radioListener)
+        binding.radioButtonStudent.setOnClickListener(radioListener)
+        binding.checkBoxService.setOnCheckedChangeListener { _, isChecked ->
+            check[AGREEMENT] = isChecked
+            updateProgress()
+        }
+    }
+
+    private fun updateProgress() {
+        val progress = check.count { it }
+        binding.progressBar.progress = progress
+        binding.buttonApply.isEnabled = binding.progressBar.max == progress
+    }
+
+    companion object {
+        const val NAME = 0
+        const val PHONE = 1
+        const val TYPE = 2
+        const val AGREEMENT = 3
+        const val MAX = 4
+    }
+}
+```
+
+## Intent
+
+* Message를 주고 받기 위한 객체
+* Application component를 요청: Activity, Service의 시작. Broadcast 전달
+* 명시적 Intent와 암시적 Intent가 있다.
+  * 명시적 Intent: fully qualified class name을 제공 -> 내 앱 안에 Activity 또는 Service 시작
+  * 암시적 Intent: 필요한 작업(동작)을 선언. 해당(기능을A지원(AndroidManifest.xml 에을선언된   Activity에지자신이원처리할할수 있는수일을 적는다) 있는 앱을 선택할 수 있도록 한다.
+
+<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+
+### 명시적 Intent
+
+* 프로젝트에 Activity 추가하기
+  * MainActivity가 포함된 패키지에서 우클릭
+  * New
+  * Activity
+  * EmptyActivity
+
+<figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+
+* Activity Name: CourseActivity&#x20;
+* Generate a Layout File에 체크 > Finish
+
+<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+
+* 확인
+  * CourseActivity.kt 생성
+  * res / layout/ activity\_course.xml 생성
+  * AndroidManifest.xml에 정보 추가
+* MainActivity에서 CourseActivity를 부르는 방법:
+  * MainActivity의 onCreate 함수 끝 부분에 다음 코드 추가
+
+```kotlin
+binding.buttonApply.setOnClickListener {
+            val intent = Intent(this, CourseActivity::class.java)
+            startActivity(intent)
+        }
+```
+
+### Activity Stack
+
+* 생성된 Activity는 Stack에 쌓으며 가장 위의 Activity가 보인다.
+* Back 키를 누르거나 Activity 스스로 finish() 함수를 호출하면 종료된다.
+
+<figure><img src="../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+
+* Activity는 싱글톤이 아니며 startActivity를 호출한 횟수만큼 생성된다.
+
+### Activity 간의 데이터 전달
+
+* 단방향: 호출 하는 Activity가 데이터 함께 전달하기
+* MainActivity에서 사용자 이름, 분반(성인반/학생반)을 CourseActivity로 전달
+* MainActivity
+
+```kotlin
+binding.buttonApply.setOnClickListener {
+            val type = if(binding.radioButtonAdult.isChecked) binding.radioButtonAdult.text
+            else binding.radioButtonStudent.text
+            val intent = Intent(this, CourseActivity::class.java)
+            intent.putExtra("name", binding.editTextName.text.toString())
+            intent.putExtra("type", type)
+
+            startActivity(intent)
+        }
+```
+
+intent.putExtra(name, object) 형식으로 데이터를 담는다.
+
+* CourseActivity에서는 받은 데이터 꺼내기
+
+```kotlin
+class CourseActivity : AppCompatActivity() {
+ private val binding by lazy { ActivityCourseBinding.inflate(layoutInflater) }
+ override fun onCreate(savedInstanceState: Bundle?) {
+ super.onCreate(savedInstanceState)
+ enableEdgeToEdge()
+ setContentView(binding.root)
+ ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
+ val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+ v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+ insets
+ }
+ binding.textViewName.text = intent.getStringExtra("name")
+ binding.textViewType.text = intent.getStringExtra("type")
+ }
+}
+```
 
 
 
