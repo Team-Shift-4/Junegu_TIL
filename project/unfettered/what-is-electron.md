@@ -112,6 +112,11 @@
 * C#과 .NET을 사용하여 iOS, Android, Windows 애플리케이션을 개발할 수 있다.
 * 네이티브 성능과 UI를 제공한다.
 
+5. NativeScript
+
+* NativeScript는 JavaScript, TypeScript 또는 Angular를 사용하여 진정한 네이티브 모바일 애플리케이션을 개발할 수 있게 해주는 오픈 소스 프레임워크이다.&#x20;
+* 단일 코드베이스로 iOS와 Android 플랫폼 모두에 대해 애플리케이션을 개발할 수 있게 해준다.
+
 ### 결론
 
 일렉트론은 데스크톱 애플리켕션 개발에 매우 유용한 프레임워크지만, 모바일 애플리케이션 개발을 위해서React Native, Flutter와 같은 모바일 전용 크로스 플랫폼 프레임워크를 사용하는 것이 적합하다.
