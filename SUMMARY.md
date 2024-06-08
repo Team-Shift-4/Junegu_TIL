@@ -76,17 +76,17 @@
   * [Logistic regression](machinelearning/basic/logistic-regression.md)
   * [Artificial neural networks](machinelearning/basic/artificial-neural-networks.md)
 
-## DataStructure
+## DataStructure(Java)
 
-* [Basic](datastructure/basic/README.md)
-  * [Overview](datastructure/basic/overview.md)
-  * [ArrayList](datastructure/basic/arraylist.md)
-  * [LinkedList](datastructure/basic/linkedlist.md)
-  * [Stack](datastructure/basic/stack.md)
-  * [Queue](datastructure/basic/queue.md)
-  * [Sort And Search](datastructure/basic/sort-and-search.md)
-  * [Tree](datastructure/basic/tree.md)
-  * [Graph](datastructure/basic/graph.md)
+* [Basic](datastructure-java/basic/README.md)
+  * [Overview](datastructure-java/basic/overview.md)
+  * [ArrayList](datastructure-java/basic/arraylist.md)
+  * [LinkedList](datastructure-java/basic/linkedlist.md)
+  * [Stack](datastructure-java/basic/stack.md)
+  * [Queue](datastructure-java/basic/queue.md)
+  * [Sort And Search](datastructure-java/basic/sort-and-search.md)
+  * [Tree](datastructure-java/basic/tree.md)
+  * [Graph](datastructure-java/basic/graph.md)
 
 ## PROJECT
 
