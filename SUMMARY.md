@@ -92,6 +92,8 @@
 
 * [Unfettered](project/unfettered/README.md)
   * [What is Electron?](project/unfettered/what-is-electron.md)
+  * [What is Kafka?](project/unfettered/what-is-kafka.md)
+  * [What is PostgreSQL?](project/unfettered/what-is-postgresql.md)
 * [Capston](project/capston/README.md)
   * [Tailwindcss](project/capston/tailwindcss.md)
   * [Proxy](project/capston/proxy.md)
