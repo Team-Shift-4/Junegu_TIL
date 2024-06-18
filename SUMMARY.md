@@ -55,6 +55,8 @@
   * [Delete a post](spring/basic/delete-a-post.md)
   * [REST API and JSON](spring/basic/rest-api-and-json.md)
   * [Spring Security](spring/basic/spring-security.md)
+* [Tip](spring/tip/README.md)
+  * [Annotation](spring/tip/annotation.md)
 
 ## Computer
 
