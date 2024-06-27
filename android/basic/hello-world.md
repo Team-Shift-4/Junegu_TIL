@@ -57,7 +57,7 @@
 
 * HelloWorld 프로젝트의 시작점: onCreate 함수부터 시작
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Android Iguana 부터 MainActivity의 기본 코드가 변경됨.
 
