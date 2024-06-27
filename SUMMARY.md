@@ -13,6 +13,7 @@
   * [Unix / Linux](linux/linux/unix-linux.md)
   * [Docker compose](linux/linux/docker-compose.md)
   * [Linux basic knowledge](linux/linux/linux-basic-knowledge.md)
+  * [File Structure](linux/linux/file-structure.md)
 * [VirtualMachine](linux/virtualmachine/README.md)
   * [Install Oracle VirtualBox](linux/virtualmachine/install-oracle-virtualbox.md)
 * [Rocky](linux/rocky/README.md)

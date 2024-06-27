@@ -1,0 +1,15 @@
+# File Structure
+
+## 파일 시스템
+
+리눅스는 유닉스 계열을 바탕으로 만들어진 오픈소스 운영체제이다. 그래서 유닉스와 마찬가지로 모든 것들을 파일로 관리한다. 리눅스의 경우 계층구조(트리구조)의 디렉토리를 가지고 있는데, 이것은 용도에 따라 구분되며, 이를 파일시스템이라고 부른다.
+
+* Linux 디렉터리 구조는 디렉터리가 다양한 용도로 사용되는 계층ㅈ적 파일 시스템 레이아웃이다
+* 이 디자인은 유닉스 계열 운영 체제의 디렉토리 구조와 디렉토리 콘텐츠를 정의하는 파일시스템 계층 구조 표준(FHS)을 따른다.
+
+## 파일 구조
+
+<table><thead><tr><th width="214">디렉터리</th><th>용도 및 파일 예</th></tr></thead><tbody><tr><td><code>/</code></td><td>루트 디렉터리로, 모든 디렉터리와 파일의 최상위 경로이다. 다른 모든 디렉터리가 이 밑에 존재한다</td></tr><tr><td><code>/bin</code></td><td>시스템 부팅과 복구에 필요한 기본 명령어 바이너리 파일들이 위치한다.<br>예: <code>ls</code>, <code>cp</code>, <code>mv</code>, <code>bash</code></td></tr><tr><td><code>/boot</code></td><td>부팅에 필요한 파일들이 위치한다. 커널, 초기 RAM 디스크 이미지, 부트 로더 파일 등이 포함된다.<br>예: <code>vmlinuz</code> (커널 이미지), <code>initrd.img</code> (초기 RAM 디스크 이미지)</td></tr><tr><td><code>/dev</code></td><td>시스템 장치 파일들이 위치한다. 모든 하드웨어 장치들이 파일 형태로 나타난다.<br>예: <code>sda</code> (첫 번째 SCSI 디스크), <code>tty1</code> (첫 번째 터미널 장치), <code>null</code> (널 디바이스)</td></tr><tr><td><code>/etc</code></td><td>시스템 설정 파일들이 위치한다. 모든 시스템 수준의 설정 파일과 스크립트가 포함된다.<br>예: <code>passwd</code> (사용자 계정 정보), <code>fstab</code> (파일 시스템 테이블), <code>hosts</code> (호스트네임과 IP 매핑)</td></tr><tr><td><code>/home</code></td><td>사용자 계정의 홈 디렉터리가 위치한다. 각 사용자는 <code>/home/username</code> 형태의 디렉터리를 가진다.<br>예: <code>/home/alice</code> (사용자 alice의 홈 디렉터리), <code>/home/bob</code> (사용자 bob의 홈 디렉터리)</td></tr><tr><td><code>/lib</code></td><td>기본 시스템 라이브러리 파일들이 위치한다. <code>/bin</code> 및 <code>/sbin</code> 바이너리가 사용하는 공유 라이브러리들이 포함된다.<br>예: <code>libc.so.6</code> (C 표준 라이브러리), <code>ld-linux.so</code> (런타임 링커/로더)</td></tr><tr><td><code>/mnt</code></td><td>임시 마운트 지점이다. 일시적으로 파일 시스템을 마운트할 때 사용된다.<br>예: <code>/mnt/temp</code> (임시 마운트 디렉터리)</td></tr><tr><td><code>/opt</code></td><td>추가 소프트웨어 패키지가 설치되는 디렉터리이다. 주로 대규모 소프트웨어 패키지들이 위치한다.<br>예: <code>/opt/eclipse</code> (Eclipse IDE), <code>/opt/lampp</code> (XAMPP 스택)</td></tr><tr><td><code>/proc</code></td><td>커널과 프로세스 정보를 담고 있는 가상 파일 시스템이다. 시스템 상태와 프로세스 정보를 확인할 수 있다.<br>예: <code>/proc/cpuinfo</code> (CPU 정보), <code>/proc/meminfo</code> (메모리 정보)</td></tr><tr><td><code>/root</code></td><td>루트 사용자의 홈 디렉터리이다. 일반적으로 루트 사용자만 접근할 수 있다.<br>예: <code>/root</code> (루트 사용자의 홈 디렉터리)</td></tr><tr><td><code>/run</code></td><td>시스템 부팅 이후에 생성되는 런타임 데이터가 위치한다. 부팅 시 초기화되고, 종료 시 삭제된다.<br>예: <code>/run/lock</code> (잠금 파일), <code>/run/user/1000</code> (사용자 1000의 런타임 데이터)</td></tr><tr><td><code>/sbin</code></td><td>시스템 관리 명령어 바이너리 파일들이 위치한다. 주로 시스템 관리자용 명령어들이 포함된다.<br>예: <code>ifconfig</code>, <code>reboot</code>, <code>shutdown</code></td></tr><tr><td><code>/tmp</code></td><td>임시 파일들이 위치한다. 시스템 재부팅 시 모든 파일이 삭제된다.<br>예: 임시 파일 생성 시 사용되는 디렉터리</td></tr><tr><td><code>/usr</code></td><td>사용자 명령어, 라이브러리, 문서 및 기타 파일들이 위치한다. <code>/usr/bin</code>, <code>/usr/lib</code> 등으로 세분화된다.<br>예: <code>/usr/bin</code> (비시스템 명령어들), <code>/usr/lib</code> (비시스템 라이브러리들)</td></tr><tr><td><code>/var</code></td><td>가변 데이터 파일들이 위치한다. 로그 파일, 메일 스풀, 프린터 스풀 등이 포함된다.<br>예: <code>/var/log</code> (로그 파일), <code>/var/mail</code> (메일 스풀)</td></tr></tbody></table>
+
+
+

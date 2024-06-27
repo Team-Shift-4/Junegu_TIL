@@ -206,25 +206,4 @@ Unix 파일 시스템의 구조는 디스크를 블록으로 분류하여 배치
 
 ### 주요 명령어
 
-|  명령어  |               설명               |
-| :---: | :----------------------------: |
-|   ls  |    현재 디렉토리의 파일 및 디렉토리 목록을 표시   |
-|   cd  |            디렉토리를 변경            |
-|  pwd  |      현재 작업 중인 디렉토리의 경로를 표시     |
-| mkdir |          새로운 디렉토리를 생성          |
-|   rm  |          파일이나 디렉토리를 삭제         |
-|   cp  |          파일이나 디렉토리를 복사         |
-|   mv  |     파일이나 디렉토리를 이동하거나 이름을 변경    |
-|  cat  |         파일의 내용을 화면에 표시         |
-|  grep |          파일 내에서 패턴을 검색         |
-| chmod |        파일이나 디렉토리의 권한을 변경       |
-| chown |       파일이나 디렉토리의 소유자를 변경       |
-|   ps  |      현재 실행 중인 프로세스 목록을 표시      |
-|  kill |            프로세스를 종료            |
-|  top  | 시스템의 CPU 및 메모리 사용량을 실시간으로 모니터링 |
-|   df  |       파일 시스템의 디스크 사용량을 표시      |
-|   du  |        디렉토리의 디스크 사용량을 표시       |
-|  tar  |          파일을 압축하거나 해제          |
-|  gzip |          파일을 압축하거나 해제          |
-|  wget |          웹에서 파일을 다운로드          |
-|  ssh  |         원격 서버에 안전하게 접속         |
+<table><thead><tr><th width="157">명령어</th><th>설명</th><th>예제</th></tr></thead><tbody><tr><td><code>ls</code></td><td>디렉터리 목록을 표시한다</td><td><code>ls -l</code> (상세 목록) <br><code>ls -a</code> (숨김목록)</td></tr><tr><td><code>cd</code></td><td>디렉터리를 변경한다</td><td><code>cd /home</code> (홈 디렉터리로 이동)</td></tr><tr><td><code>pwd</code></td><td>현재 작업 중인 디렉터리 경로를 출력한다</td><td><code>pwd</code></td></tr><tr><td><code>cp</code></td><td>파일이나 디렉터리를 복사한다</td><td><code>cp file1 file2</code> (file1을 file2로 복사)</td></tr><tr><td><code>mv</code></td><td>파일이나 디렉터리를 이동하거나 이름을 변경한다</td><td><code>mv oldname newname</code> (파일 이름 변경)</td></tr><tr><td><code>rm</code></td><td>파일이나 디렉터리를 삭제한다</td><td><code>rm file</code> (file 삭제)</td></tr><tr><td><code>mkdir</code></td><td>새로운 디렉터리를 생성한다</td><td><code>mkdir newdir</code> (newdir 생성)</td></tr><tr><td><code>rmdir</code></td><td>빈 디렉터리를 삭제한다</td><td><code>rmdir emptydir</code> (emptydir 삭제)</td></tr><tr><td><code>touch</code></td><td>새로운 빈 파일을 생성하거나 기존 파일의 타임스탬프를 변경한다</td><td><code>touch newfile</code> (newfile 생성)</td></tr><tr><td><code>cat</code></td><td>파일 내용을 출력한다</td><td><code>cat file</code> (file 내용 출력)</td></tr><tr><td><code>less</code></td><td>파일 내용을 페이지 단위로 출력한다</td><td><code>less file</code> (file 내용을 페이지 단위로 출력)</td></tr><tr><td><code>head</code></td><td>파일의 처음 몇 줄을 출력한다</td><td><code>head -n 10 file</code> (file의 처음 10줄 출력)</td></tr><tr><td><code>tail</code></td><td>파일의 마지막 몇 줄을 출력한다</td><td><code>tail -n 10 file</code> (file의 마지막 10줄 출력)</td></tr><tr><td><code>grep</code></td><td>파일에서 패턴을 검색한다</td><td><code>grep 'pattern' file</code> (file에서 'pattern' 검색)</td></tr><tr><td><code>find</code></td><td>파일을 검색한다</td><td><code>find /path -name 'filename'</code> (/path에서 'filename' 검색)</td></tr><tr><td><code>chmod</code></td><td>파일이나 디렉터리의 권한을 변경한다</td><td><code>chmod 755 file</code> (file의 권한을 755로 변경)</td></tr><tr><td><code>chown</code></td><td>파일이나 디렉터리의 소유자를 변경한다</td><td><code>chown user:group file</code> (file의 소유자를 user:group으로 변경)</td></tr><tr><td><code>ps</code></td><td>현재 실행 중인 프로세스를 나열한다</td><td><code>ps aux</code> (모든 프로세스를 상세히 나열)</td></tr><tr><td><code>kill</code></td><td>프로세스를 종료한다</td><td><code>kill PID</code> (프로세스 ID가 PID인 프로세스 종료)</td></tr><tr><td><code>top</code></td><td>실시간으로 시스템 상태와 프로세스를 보여준다</td><td><code>top</code></td></tr><tr><td><code>df</code></td><td>파일 시스템의 디스크 사용량을 보여준다</td><td><code>df -h</code> (사람이 읽기 쉬운 형식으로 출력)</td></tr><tr><td><code>du</code></td><td>디렉터리나 파일의 디스크 사용량을 보여준다</td><td><code>du -sh</code> (현재 디렉터리의 총 사용량을 요약해서 출력)</td></tr><tr><td><code>ifconfig</code></td><td>네트워크 인터페이스를 설정하거나 확인한다</td><td><code>ifconfig</code> (네트워크 설정 출력)</td></tr><tr><td><code>ping</code></td><td>네트워크 연결 상태를 확인한다</td><td><code>ping google.com</code> (google.com에 핑을 보냄)</td></tr><tr><td><code>wget</code></td><td>파일을 다운로드한다</td><td><code>wget http://example.com/file</code> (URL에서 파일 다운로드)</td></tr><tr><td><code>scp</code></td><td>원격 서버와 파일을 복사한다</td><td><code>scp file user@remote:/path</code> (file을 원격 서버의 /path로 복사)</td></tr><tr><td><code>ssh</code></td><td>원격 서버에 접속한다</td><td><code>ssh user@remote</code> (원격 서버에 SSH로 접속)</td></tr><tr><td><code>sudo</code></td><td>관리자 권한으로 명령어를 실행한다</td><td><code>sudo command</code> (command를 관리자 권한으로 실행)</td></tr></tbody></table>
