@@ -83,17 +83,17 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 3. 설치 설정
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 요약</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 요약</p></figcaption></figure>
 
 * 주황색 삼각형 아이콘이 뜨는것들만 설정을 해주면 설치 시작을 할 수 있다.
 
 4. 소프트웨어 선택
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>소프트웨어 선택</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>소프트웨어 선택</p></figcaption></figure>
 
 5. 운영체제를 설치할 경로를 선택한다.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>설치 경로</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 경로</p></figcaption></figure>
 
 * 디스크 파티션 설정 할수있다.
   * **디스크 추가(A):** 사용 가능한 특수 디스크 또는 네트워크 디스크 추가한다.

@@ -25,7 +25,7 @@
   * CSRF 토큰은 서버에서 생성되어 클라이언트로 전달되며, 클라이언트는 이 토큰을 요청에 함께 포함시켜야 한다.
   * 서버는 요청이 정상적인 경로로 들어왔는지 확인하고, 위조 요청을 방지할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **세션 고정(Session Fixation) 공격**
   * 사용자가 로그인할 때 발급받은 세션 ID를 악용하는 공격 방식 이다.
@@ -48,11 +48,11 @@
 
 * 스프링 시큐리티는 다양한 필터들로 나누어져 있으며, 각 필터에서 인증, 인가와 관련된 작업을 처리한다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>스프링 시큐리티 필터 구조</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>스프링 시큐리티 필터 구조</p></figcaption></figure>
 
 
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 핵심 역할은 Authentication Manager(인증 매니저)를 통해 이루어진다.
 * Authentication Provider는 인증 매니저가 어떻게 동작해야 하는지 결정 한다.
