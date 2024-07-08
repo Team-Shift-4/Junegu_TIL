@@ -40,7 +40,7 @@
 * 화면 공유 기능 제공
   * 회의 참가자는 자신의 화면을 공유하여 프레젠테이션, 문서, 브라우저 창 등을 실시간으로 다른 참가자와 공유.
 
-
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### 브레인 스토밍
 
@@ -53,10 +53,14 @@
 * 작성된 마인드맵 저장 및 내보내기 기능
   * 파일 시스템 사용
 
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 2. SWOT
 
 * 강점, 약점, 기회, 위협으로 나누어 아이디어에 대한 생각을 팀원들과 정리하는 기능
 * &#x20;웹소켓을 활용하여 실시간으로SWOT의 해당 항목에 팀원들과 낸 아이디어를 정리할 수 있다.
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -65,6 +69,8 @@
 * 팀원마다 각자 사고하는 방향을 결정하여 역할에 맞게 의논하는 회의 기법
 * 웹소켓을 활용하여 실시간으로 채팅을 하여 의견을 타협
 
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 
 
 4. 크레이지 에이트
@@ -72,7 +78,7 @@
 * 팀원 모두 8분 안에 8개의 아이디어를 내는 형식으로 팀원들이 낸 각각의 아이디어를 Gemini Ai를 이용하여 요약해 정리한다.
 * AWS에 RDS를 사용하여 MySQL에 데이터베이스 관리
 
-
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### 배포
 
@@ -132,3 +138,6 @@
 
 {% embed url="https://github.com/YJUCapstoneDesign/ConferenceProject" %}
 
+주요담당 업무 깃허브 경로
+
+* ConferenceProject/FrontEnd/janus-text\_v\_2/src/components

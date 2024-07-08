@@ -2,7 +2,7 @@
 
 ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.centos.org/download/)
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 본 프로젝트는 CentOS-7-x86\_64-DVD-2009.ISO를 기준으로 작성한 문서이다.
 
