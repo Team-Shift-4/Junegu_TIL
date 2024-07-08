@@ -1,6 +1,23 @@
 # Table of contents
 
-* [PORTFOLIO](README.md)
+## PORTFOLIO
+
+* [CAPSTON DESIGN](README.md)
+
+## CAPSTON STUDY
+
+* [Study](capston-study/study/README.md)
+  * [Tailwindcss](capston-study/study/tailwindcss.md)
+  * [Proxy](capston-study/study/proxy.md)
+  * [RestAP](capston-study/study/restap.md)
+  * [WebSocket](capston-study/study/websocket.md)
+
+## PROJECT
+
+* [Unfettered](project/unfettered/README.md)
+  * [What is Electron?](project/unfettered/what-is-electron.md)
+  * [What is Kafka?](project/unfettered/what-is-kafka.md)
+  * [What is PostgreSQL?](project/unfettered/what-is-postgresql.md)
 
 ## Oracle
 
@@ -36,10 +53,6 @@
   * [Widget and listener](android/basic/widget-and-listener.md)
   * [WidgetAndListener2](android/basic/widgetandlistener2.md)
   * [Activity And Intent](android/basic/activity-and-intent.md)
-  * [RecyclerView](android/basic/recyclerview.md)
-  * [SharedPreferenceAndViewModel](android/basic/sharedpreferenceandviewmodel.md)
-  * [Permissions](android/basic/permissions.md)
-  * [Using Fragments](android/basic/using-fragments.md)
 
 ## Kotlin
 
@@ -91,15 +104,3 @@
   * [LinkedList](datastructure-java/basic/linkedlist.md)
   * [Stack](datastructure-java/basic/stack.md)
   * [Queue](datastructure-java/basic/queue.md)
-
-## PROJECT
-
-* [Unfettered](project/unfettered/README.md)
-  * [What is Electron?](project/unfettered/what-is-electron.md)
-  * [What is Kafka?](project/unfettered/what-is-kafka.md)
-  * [What is PostgreSQL?](project/unfettered/what-is-postgresql.md)
-* [Capston](project/capston/README.md)
-  * [Tailwindcss](project/capston/tailwindcss.md)
-  * [Proxy](project/capston/proxy.md)
-  * [RestAP](project/capston/restap.md)
-  * [WebSocket](project/capston/websocket.md)
