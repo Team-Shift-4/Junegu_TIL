@@ -1,8 +1,10 @@
 # Table of contents
 
+* [PORTFOLIO](README.md)
+
 ## Oracle
 
-* [Basic](README.md)
+* [Basic](<README (1).md>)
   * [What is an Oracle?](oracle/basic/what-is-an-oracle.md)
 * [Architecture](oracle/architecture/README.md)
   * [Oracle Structure](oracle/architecture/oracle-structure.md)
@@ -89,9 +91,6 @@
   * [LinkedList](datastructure-java/basic/linkedlist.md)
   * [Stack](datastructure-java/basic/stack.md)
   * [Queue](datastructure-java/basic/queue.md)
-  * [Sort And Search](datastructure-java/basic/sort-and-search.md)
-  * [Tree](datastructure-java/basic/tree.md)
-  * [Graph](datastructure-java/basic/graph.md)
 
 ## PROJECT
 
