@@ -1,20 +1,8 @@
 # Table of contents
 
-## PORTFOLIO
-
-* [CAPSTON DESIGN](README.md)
-
-## CAPSTON STUDY
-
-* [Study](capston-study/study/README.md)
-  * [Tailwindcss](capston-study/study/tailwindcss.md)
-  * [Proxy](capston-study/study/proxy.md)
-  * [RestAP](capston-study/study/restap.md)
-  * [WebSocket](capston-study/study/websocket.md)
-
 ## PROJECT
 
-* [Unfettered](project/unfettered/README.md)
+* [Unfettered](README.md)
   * [What is Electron?](project/unfettered/what-is-electron.md)
   * [What is Kafka?](project/unfettered/what-is-kafka.md)
   * [What is PostgreSQL?](project/unfettered/what-is-postgresql.md)
@@ -95,6 +83,14 @@
   * [Linear/Multiple Regression](machinelearning/basic/linear-multiple-regression.md)
   * [Logistic regression](machinelearning/basic/logistic-regression.md)
   * [Artificial neural networks](machinelearning/basic/artificial-neural-networks.md)
+
+## CAPSTON STUDY
+
+* [Study](capston-study/study/README.md)
+  * [Tailwindcss](capston-study/study/tailwindcss.md)
+  * [Proxy](capston-study/study/proxy.md)
+  * [RestAP](capston-study/study/restap.md)
+  * [WebSocket](capston-study/study/websocket.md)
 
 ## DataStructure(Java)
 
