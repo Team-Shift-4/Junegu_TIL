@@ -20,7 +20,7 @@
 * 명령 프롬프트는 다양한 운영 체제에서 사용자와 운영 체제 간 상호 작용을 위해 텍스트 기반 인터페이스를 제공하는 창구이다. 사용자 입력을 통해 명령을 입력하고 텍스트 기반 피드백을 받는다.
 * 명령 프롬프트 구성 요소:
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 사용자(user): 현재 로그인한 사용자
 * 호스트(host): 사용 중인 시스템 이름

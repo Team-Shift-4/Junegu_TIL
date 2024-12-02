@@ -25,7 +25,7 @@
   * CSRF 토큰은 서버에서 생성되어 클라이언트로 전달되며, 클라이언트는 이 토큰을 요청에 함께 포함시켜야 한다.
   * 서버는 요청이 정상적인 경로로 들어왔는지 확인하고, 위조 요청을 방지할 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **세션 고정(Session Fixation) 공격**
   * 사용자가 로그인할 때 발급받은 세션 ID를 악용하는 공격 방식 이다.
@@ -48,11 +48,11 @@
 
 * 스프링 시큐리티는 다양한 필터들로 나누어져 있으며, 각 필터에서 인증, 인가와 관련된 작업을 처리한다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>스프링 시큐리티 필터 구조</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>스프링 시큐리티 필터 구조</p></figcaption></figure>
 
 
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 핵심 역할은 Authentication Manager(인증 매니저)를 통해 이루어진다.
 * Authentication Provider는 인증 매니저가 어떻게 동작해야 하는지 결정 한다.
@@ -60,7 +60,7 @@
 
 #### 스프링 시큐리티 폼 로그인 인증 흐름
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. 사용자가 폼에 아이디와 패스워드 입력하면 AuthenticationFilter가 아이디와 패스워드 유효성을 검사한다.
 2. 실제 구현체인 UsernamePasswordAuthentiation Token을 만들어 넘겨준다
@@ -113,7 +113,7 @@ dependencies {
 
 * 회원 엔티티와 매핑할 테이블 구조
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 엔티티 생성 domain/User.java
   * UserDetails 클래스를 상속하는 user 클래스 생성 한다.

@@ -1,8 +1,14 @@
 # Table of contents
 
+## Network Tech Note
+
+* [Actual Equipment](README.md)
+  * [Cisco IOS](network-tech-note/actual-equipment/cisco-ios.md)
+  * [Cisco NX-OS](network-tech-note/actual-equipment/cisco-nx-os.md)
+
 ## PROJECT
 
-* [Unfettered](README.md)
+* [Unfettered](<README (2).md>)
   * [What is Electron?](project/unfettered/what-is-electron.md)
   * [What is Kafka?](project/unfettered/what-is-kafka.md)
   * [What is PostgreSQL?](project/unfettered/what-is-postgresql.md)

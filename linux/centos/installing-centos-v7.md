@@ -83,17 +83,17 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 3. 설치 설정
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 요약</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 요약</p></figcaption></figure>
 
 * 주황색 삼각형 아이콘이 뜨는것들만 설정을 해주면 설치 시작을 할 수 있다.
 
 4. 소프트웨어 선택
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>소프트웨어 선택</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>소프트웨어 선택</p></figcaption></figure>
 
 5. 운영체제를 설치할 경로를 선택한다.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 경로</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>설치 경로</p></figcaption></figure>
 
 * 디스크 파티션 설정 할수있다.
   * **디스크 추가(A):** 사용 가능한 특수 디스크 또는 네트워크 디스크 추가한다.
@@ -102,7 +102,7 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 6. 네트워크 설정
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>네트워크 설정</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>네트워크 설정</p></figcaption></figure>
 
 * **이더넷(enp0s3)** : 관리용 네트워크로 대시보드와 API에 접속할 수 있다.
 * **이더넷(enp0s8)** : 인터넷과 외부에서 접속할 수 있는 유동 IP의 통로 역할을 한다
@@ -110,7 +110,7 @@ ISO 다운로드 사이트 : [https://www.centos.org/download/](https://www.cent
 
 7. 설치 시작
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 설정이 끝났으면 설치 시작(B) 버튼을 누른다.
 
