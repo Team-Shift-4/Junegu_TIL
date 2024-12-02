@@ -9,7 +9,7 @@
 * 초기화 -> 초기설정
 * 패스워드 리커버리(복구)
 * 로그에 연도 표시
-* 콘솔 / VTY 설정
+* 콘솔 / VTY
 
 
 
@@ -59,7 +59,7 @@ Switch(config)#username 사용자 계정 (privilege 권한번호) password/secre
   운영, 효율성을 유지하는 중요한 절차이다.
 * privilege를 명시 안했을 경우 \<default 1>로 설정된다.
 
-<table><thead><tr><th width="186">Privilege Level</th><th>설명</th></tr></thead><tbody><tr><td>0</td><td>최소한의 권한 수준, 사용자 모드에서만 동작하며 장비에 대한 조회만 가능</td></tr><tr><td>1</td><td>기본 사용자 권한. 일반적인 조회 및 디바이스 상태 점검 가능</td></tr><tr><td>2 ~ 14</td><td>관리자가 필요에 따라 커스터마이징 가능한 중간 권한 수준. 특정 명령어만 허용하도록 설정 가능</td></tr><tr><td>15</td><td>최고 관리자 권한. 모든 명령어에 접근 가능하며, 글로벌 설정 및 구성 변경 가능</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="186">Privilege Level</th><th>설명</th></tr></thead><tbody><tr><td>0</td><td>최소한의 권한 수준, 사용자 모드에서만 동작하며 장비에 대한 조회만 가능</td></tr><tr><td>1</td><td>기본 사용자 권한. 일반적인 조회 및 디바이스 상태 점검 가능</td></tr><tr><td>2 ~ 14</td><td>관리자가 필요에 따라 커스터마이징 가능한 중간 권한 수준. 특정 명령어만 허용하도록 설정 가능</td></tr><tr><td>15</td><td>최고 관리자 권한. 모든 명령어에 접근 가능하며, 글로벌 설정 및 구성 변경 가능</td></tr></tbody></table>
 
 * 장비에 등록된 계정은 Switch#show running-config 명령어를 통해 확인 가능하다.
 
@@ -162,25 +162,295 @@ ssh 사용자이름@ip주소
 
 ## 초기화 (설정 초기화)
 
+* Cisco IOS 장비를 초기화 하여 초기 상태로 복구하는 방법은 모든 설정을 지우고 기본값으로 복구하며, 스위치를 처음 사용하는 상태로 만든다.
+
+### 현재 설정 확인 및 백업
+
+(1) 현재 실행 중인 설정을 확인한다.
+
+```
+show running-config
+```
+
+(2) 필요하다면 설정을 백업한다.
+
+```
+copy running-config tftp
+```
+
+(3) 로컬 파일로 저장 (콘솔 / 터미널 소프트웨어 사용)
+
+* 텍스트 파일로 저장한다.
+
+
+
+### NVRAM 초기화 (설정 지우기)
+
+#### NVRAM에 저장된 설정 파일(Startup-config)을 삭제한다.
+
+```
+write erase
+```
+
+* 명령어를 입력하면 스위치의 Startup-config 파일이 삭제된다.
+
+
+
+### 장비 재부팅
+
+#### 장비를 재부팅하여 초기 상태로 만든다.
+
+```
+reload
+```
+
+* 재부팅 도중 메시지가 뜨면 Enter를 눌려 확인한다.
+
+```
+Proceed with reload? [confirm]
+```
+
+* 재부팅 후, 스위치는 기본적으로 Setup Mode 로 들어간다, 이는 스위치가 초기화 상태임을 의미한다.
+
+
+
+### VLAN 데이터베이스 초기화 (필요한 경우)
+
+#### VLAN 데이터베이스는 설정 초기화로 지워지지 않을 수 있다.
+
+(1) Flash 메모리에서 VLAN 데이터베이스 삭제
+
+```
+delete flash:vlan.dat
+```
+
+* 삭제를 확인하는 메시지가 나오면 Enter를 눌러 확인한다.
+
+(2) VLAN 초기화 후 재부팅
+
+```
+reload
+```
+
+
+
+### 초기 상태 확인
+
+#### 장비 재부팅 후 초기화가 완료되었는지 확인한다.
+
+```
+show running-config
+```
+
+
+
+### 주의사항
+
+* 초기화 과정은 복구 불가능
+  * 초기화 이후 설정을 복구하려면 반드시 백업 파일이 필요하다.
+* VLAN 초기화는 별도로 진행
+  * write erase는 VLAN 데이터베이스를 초기화하지 않으므로, VLAN 초기화가 필요하면\
+    delete flash:vlan.dat 명령을 추가로 사용한다.
+
 
 
 ## 패스워드 리커버리
+
+### 패스워드 리커버리 절차
+
+1. 장비를 재부팅하고 ROMMON(ROM Monitor) 모드로 진입
+2. 설정 레지스터 값을 변경하여 startup-config를 무시하도록 설정
+3. 장비를 부팅하고, 기존 설정을 복구한 뒤 패스워드를 재설정
+4. 설정 레지스터를 원래 상태로 복원하고 장비를 재부팅
+
+
+
+### 장비 재부팅
+
+* Cisco 장비의 전원을 끄고 다시 켠다.
+* 재부팅 중에 터미널 창에 Cisco 부팅 메시지가 나타날 때, ctrl + Break 키를 눌러 ROMMON모드로 \
+  진입한다.
+  * ROMMON 모드에 성공적으로 들어가면 콘솔창에 해당 메시지가 표시된다.
+
+```
+switch: 
+```
+
+### 설정 레지스터 값 변경
+
+* ROMMON 모드에서 설정 레지스터 값을 변경하여 startup-config 파일을 무시하도록 설정한다.
+
+```
+confreg 0x2142
+```
+
+* 장비를 재부팅한다.
+
+```
+reset
+```
+
+<figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+
+### 장비 부팅 후 CLI 접근
+
+* 장비가 재부팅되면, 초기 설정 상태로 부팅된다.
+* 메시지가 나타나면 No를 입력하여 초기 설정 모드에 진입하지 않는다.
+
+```
+Would you like to enter the initial configuration dialog? [yes/no]: no
+```
+
+* Enable 모드로 진입
+
+```
+enable
+```
+
+* 비밀번호 없이 Enable 모드에 접근이 가능하다.
+
+### 기존 설정 복구
+
+* Startup-config 파일을 Running-config로 복사하여 기존 설정을 복구한다.
+
+```
+copy startup-config running-config
+```
+
+* 복구된 설정 파일에서 이전 설정을 다시 활성화한다.
+
+
+
+### 패스워드 재설정
+
+* 새로운 패스워드를 설정한다.
+
+```
+configure terminal
+enable secret <새로운 패스워드>
+```
+
+
+
+### 설정 레지스터 복원
+
+* 설정 레지스터 값을 초기 상태(0x2102)로 복원한다.
+
+```
+config-register 0x2102
+```
+
+
+
+### 변경 사항 저장 및 재부팅
+
+* 변경 사항을 저장
+
+```
+write memory
+```
+
+* 장비를 재부팅
+
+```
+reload
+```
+
+
+
+### 패스워드 리커버리 비활성화
+
+* 보안 정책에 따라 패스워드 리커버리를 비활성화할 수 있다.
+
+```
+no service password-recovery
+```
 
 
 
 ## 로그에 연도표시
 
+### 현재 설정 확인
+
+#### 현재 로그 타임스탬프 설정을 확인한다
+
+```
+show running-config | include service timestamps
+```
+
+<figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
+
+현재는 연도가 포함이 안 된 상태로 로그가 나오는 것이 확인된다.
+
+### 연도 표시 활성화
+
+#### (1) Configure Terminal 모드로 진입
+
+```
+configure terminal
+```
+
+(2) 로그 타임스탬프에 연도 포함
+
+```
+service timestamps log datetime msec localtime show-timezone year
+```
+
+* 주요 옵션
+  * datetime : 날짜와 시간을 로그에 포함
+  * msec : 밀리초 단위로 시간 표시
+  * localtime : 로컬 타임존 기반 시간 사용
+  * show-timezone : 타임존 정보 표시
+  * year : 연도를 포함
+
+### 한국 표준시 설정
+
+#### 연도를 표시하더라도 타임존이 올바르지 않으면 시간 정보가 정확하지 않을 수 있다.
+
+(1) 타임존 설정 확인
+
+```
+show clock
+```
+
+(2) 타임존 설정
+
+```
+clock timezone KST 9
+```
+
+<figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
+
+## 콘솔 / VTY&#x20;
+
+#### 콘솔과 VTY는 Cisco 장비에서 장비를 관리하고 접근하기 위한 두가지 주요 인터페이스이다.
+
+<table data-full-width="true"><thead><tr><th width="158">특징</th><th>콘솔(Console)</th><th>VTY*Virtual Teletype)</th></tr></thead><tbody><tr><td>접속 방식</td><td>물리적 연결</td><td>네트워크 연결</td></tr><tr><td>사용 프로토콜</td><td>없음</td><td>Telnet, SSH</td></tr><tr><td>초기 설정 가능</td><td>가능</td><td>불가능 (초기 네트워크 설정 필요)</td></tr><tr><td>보안성</td><td>물리적 접근으로 보안 높음</td><td>Telnet은 보안 취약, SSH는 안전</td></tr><tr><td>동시 접속 가능</td><td>단일 사용자</td><td>다중 사용자</td></tr><tr><td>접속 제한 조건</td><td>장비에 물리적 접근 필요</td><td>네트워크 연결 필요</td></tr><tr><td>주요 사용 목적</td><td>초기 설정, 문제 복구</td><td>원격 관리, 다중 사용자 접근</td></tr></tbody></table>
+
+* 콘솔 : 초기 설정이나 네트워크 문제가 발생했을 때 사용한다.
+* VTY : 원격으로 장비를 관리할 때 사용, SSH를 통해 보안을 강화하는 것이 필수이다.
+
+### 콘솔 장 / 단점
+
+* 장점
+  * 네트워크 연결이 없어도 CLI 접근 가능
+  * 네트워크 설정 오류로 인해 원격 접근이 불가능할 때 유일한 접근 방식
+  * 물리적 접근 권한이 있어야 하므로 상대적으로 안전
+* 단점
+  * 물리적으로 장비에 가까이 있어야 함
+  * 원격 관리 불가능
 
 
-## 콘솔 / VTY 설정
 
+### VTY 장 / 단점
 
-
-
-
-
-
-
-
-
-
+* 장점
+  * 원격으로 장비를 관리할 수 있어 효율적
+  * 여러 관리자가 동시에 접속 가능
+  * 네트워크를 통해 CLI를 사용할 수 있으므로 물리적 접근 불필요
+* 단점
+  * Telnet은 보안에 취약
+  * 네트워크 연결이 필수적이므로 네트워크 문제가 발생하면 접근 불가
+  * 초기 설정(예 : IP 설정)이 완료되지 않은 장비에는 접근 불가
