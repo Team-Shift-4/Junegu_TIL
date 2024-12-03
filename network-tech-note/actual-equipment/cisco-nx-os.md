@@ -11,8 +11,6 @@
 * 패스워드 리커버리(복구)
 * 콘솔 / VTY
 
-
-
 ## IOS와 NX-OS의 차이점
 
 ### 운영체제 차이점
@@ -21,7 +19,7 @@
 
 ### 명령어 차이점
 
-<table data-full-width="true"><thead><tr><th>기능 / 설정</th><th>Cisco IOS 명령어</th><th>Cisco NX-OS 명령어</th></tr></thead><tbody><tr><td>인터페이스 진입</td><td>interface GigabitEthernet1/0</td><td>interface ethernet 1/1</td></tr><tr><td>VLAN 생성</td><td>vlan 10</td><td>vlan 10</td></tr><tr><td>VLAN 활성화</td><td>기본적으로 활성화</td><td>feature vlan</td></tr><tr><td>라우팅 활성화</td><td>기본적으로 활성화</td><td>feature ospf</td></tr><tr><td>OSPF 설정</td><td>router ospf 1</td><td>router ospf 1</td></tr><tr><td>Port-Channel 생성</td><td>interface port-channel1</td><td>interface port-channel1</td></tr><tr><td>Port-Channel 활성화</td><td>기본적으로 활성화</td><td>feature lacp</td></tr><tr><td>HSRP 설정</td><td>standby 1 ip 192.168.1.1</td><td>hsrp version2</td></tr><tr><td>구성 저장</td><td>write memory 또는 copy run start</td><td>copy running-config startup-config</td></tr><tr><td>장치 재부팅</td><td>reload</td><td>reload</td></tr><tr><td>장치 상태 확인</td><td>show version</td><td>show version</td></tr><tr><td>장치 로그 확인</td><td>show logging</td><td>show logging logfile</td></tr><tr><td>MAC 주소 테이블 확인</td><td>show mac address-table</td><td>show mac address-table</td></tr><tr><td>ARP 테이블 확인</td><td>show ip arp</td><td>show ip arp</td></tr><tr><td>디버깅 활성화</td><td>debug ip ospf events</td><td>debug ospf events</td></tr><tr><td>역할 기반 접근 제어 설정</td><td>Privilege Levels로 설정</td><td>role name &#x3C;role> 로 설정</td></tr><tr><td>CPU / MEM 확인</td><td>show process cpu / <br>show memory platform</td><td>show system resources</td></tr><tr><td>인터페이스 상태 확인</td><td>show interfaces status</td><td>show interface status</td></tr><tr><td>장비의 하드웨어 환경 상태 확인</td><td>show environment all</td><td>show environment</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>기능 / 설정</th><th>Cisco IOS 명령어</th><th>Cisco NX-OS 명령어</th></tr></thead><tbody><tr><td>인터페이스 진입</td><td>interface GigabitEthernet1/0</td><td>interface ethernet 1/1</td></tr><tr><td>VLAN 생성</td><td>vlan 10</td><td>vlan 10</td></tr><tr><td>VLAN 활성화</td><td>기본적으로 활성화</td><td>feature vlan</td></tr><tr><td>라우팅 활성화</td><td>기본적으로 활성화</td><td>feature ospf</td></tr><tr><td>OSPF 설정</td><td>router ospf 1</td><td>router ospf 1</td></tr><tr><td>Port-Channel 생성</td><td>interface port-channel1</td><td>interface port-channel1</td></tr><tr><td>Port-Channel 활성화</td><td>기본적으로 활성화</td><td>feature lacp</td></tr><tr><td>HSRP 설정</td><td>standby 1 ip 192.168.1.1</td><td>hsrp version2</td></tr><tr><td>구성 저장</td><td>write memory 또는 copy run start</td><td>copy running-config startup-config</td></tr><tr><td>장치 재부팅</td><td>reload</td><td>reload</td></tr><tr><td>장치 상태 확인</td><td>show version</td><td>show version</td></tr><tr><td>장치 로그 확인</td><td>show logging</td><td>show logging logfile</td></tr><tr><td>MAC 주소 테이블 확인</td><td>show mac address-table</td><td>show mac address-table</td></tr><tr><td>ARP 테이블 확인</td><td>show ip arp</td><td>show ip arp</td></tr><tr><td>디버깅 활성화</td><td>debug ip ospf events</td><td>debug ospf events</td></tr><tr><td>역할 기반 접근 제어 설정</td><td>Privilege Levels로 설정</td><td>role name &#x3C;role> 로 설정</td></tr><tr><td>CPU / MEM 확인</td><td>show process cpu / <br>show memory platform</td><td>show system resources</td></tr><tr><td>인터페이스 상태 확인</td><td>show interfaces status</td><td>show interface status</td></tr><tr><td>장비의 하드웨어 환경 상태 확인</td><td>show environment all</td><td>show environment</td></tr><tr><td>ssh 버전 확인</td><td>show ip ssh</td><td>show ssh server</td></tr></tbody></table>
 
 
 
@@ -88,15 +86,94 @@ lower case letters, upper case letters, digits and special characters.
 
 ## SSH 접속
 
+### 관리 인터페이스 설정
+
+* SSH 접속을 위해 장비에 관리 IP 주소를 설정한다.
+
+1. 관리 인터페이스 진입
+
+```
+switch# config terminal
+switch(config)# interface mgmt0
+```
+
+2. IP 주소 설정
+
+```
+switch(config-if)# ip address <IP 주소> <서브넷 마스크>
+```
+
+3. 인터페이스 활성화
+
+```
+switch(config-if)# no shutdown
+```
 
 
 
+### SSH 서버 활성화
+
+1. SSH 기능 활성화
+
+```
+switch(config)# feature ssh
+```
+
+2. 도메인 이름 설정
+
+```
+switch(config)# ip domain-name <도메인 이름>
+```
+
+3. 로컬 사용자 계정 생성
+
+```
+switch(config)# username admin password <비밀번호>
+```
+
+4. 암호화 키 생성
+
+```
+switch(config)# crypto key generate rsa
+```
+
+5. SSH 버전 설정
+
+```
+switch(config)# ssh key rsa 2048
+switch(config)# ip ssh version 2
+```
 
 
 
+### 설정 확인
+
+1. SSH 활성화 상태 확인
+
+```
+switch# show feature
+```
+
+* SSH 기능이 enabled로 표시되어야 한다.
+
+2. 관리 인터페이스 상태 확인
+
+```
+switch# show ip interface brief
+```
+
+* 관리 IP가 올바르게 설정되고 활성화(up/up) 상태인지 확인한다.
 
 
 
+| 작업                | 명령어                                |
+| ----------------- | ---------------------------------- |
+| Ethernet1/1 IP 설정 | interface ethernet1/1 + ip address |
+| SSH 활성화           | feature ssh                        |
+| RSA 키 생성          | crypto key generate rsa            |
+| SSH 버전 설정         | ip ssh version 2                   |
+| PC IP 설정          | ip 192.168.1.2 255.255.255.0       |
+| Ping 테스트          | ping 192.168.1.1                   |
 
 
 
