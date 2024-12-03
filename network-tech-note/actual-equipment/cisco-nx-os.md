@@ -1,6 +1,6 @@
 # Cisco NX-OS
 
-본 프로젝트는  GNS3 기준으로 작성 되었다.
+본 프로젝트는  GNS3 CiscoNX-OSv90009300v10.3.1 기준으로 작성 되었다.
 
 
 
@@ -10,18 +10,44 @@
 * SSH 접속
 * 초기화 -> 초기설정
 * 패스워드 리커버리(복구)
-* 로그에 연도 표시
+* IOS와 다른 명령어
 * 콘솔 / VTY
 
 
 
 ## 사용자 계정 생성(권한, Secret)
 
+<figure><img src="../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 
 
 
 
+### 유저 아이디 생성 확인
+
+```
+username admin password 5 $5$OLBDNI$/9qn0mZDtAidBxrvIH3j9o2J/HAqjZ6MG5MrEjdiMd0
+ role network-admin
+ 
+username ire password 5 $5$ALCLFB$kY41B6ZxcgW1WOwtitH18z2gaW4tpuFT18p5fNuOA84  r
+ole priv-15
+```
+
+* show running-config 명령어를  통해 알아보니 무조건 IOS의 secret처럼 암호화가 되는 것을 확인할 수 있다.
+
+### 패스워드 설정 양식
+
+```
+Password should contain characters from at least three of the following classes: 
+lower case letters, upper case letters, digits and special characters.
+
+비밀번호에는 소문자, 대문자, 숫자 및 특수 문자 등 세 가지 클래스 중 하나 이상의 문자가 
+포함되어야 한다.
+
+ Length should be at least 8 characters
+ 
+ 길이는 8자 이상이어야 한다.
+```
 
 ## SSH 접속
 
@@ -40,14 +66,6 @@
 
 
 ## 패스워드 리커버리
-
-
-
-
-
-
-
-## 로그에 연도 표시
 
 
 
