@@ -5,6 +5,7 @@
 * [Actual Equipment](README.md)
   * [Cisco IOS](network-tech-note/actual-equipment/cisco-ios.md)
   * [Cisco NX-OS](network-tech-note/actual-equipment/cisco-nx-os.md)
+  * [Device-specific commands](network-tech-note/actual-equipment/device-specific-commands.md)
 
 ## PROJECT
 
