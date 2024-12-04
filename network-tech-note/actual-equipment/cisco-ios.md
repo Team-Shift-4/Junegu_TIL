@@ -21,7 +21,7 @@
 Switch(config)#username 사용자 계정 (privilege 권한번호) password/secret 비밀번호
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>secret</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>secret</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>password</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ Switch(config)#username 사용자 계정 (privilege 권한번호) password/secre
 
 #### 설정 확인
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Show running-config 명령어를 통해 확인 가능하다.
 * secret으로 만든 유저의 비밀번호는 암호화로 되어있고 password를 통해서 만든 유저는 \

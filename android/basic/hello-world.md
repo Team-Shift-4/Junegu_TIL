@@ -57,11 +57,11 @@
 
 * HelloWorld 프로젝트의 시작점: onCreate 함수부터 시작
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Android Iguana 부터 MainActivity의 기본 코드가 변경됨.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * enableEdgeToEdge
   * 화면이 더 많은 콘텐츠를 표시할 수 있도록 하고자 할 때

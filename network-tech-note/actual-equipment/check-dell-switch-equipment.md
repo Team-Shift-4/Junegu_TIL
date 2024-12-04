@@ -19,6 +19,22 @@
 
 
 
+## 모델명, OS 확인
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## SN 확인
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
 ## 육안 점검
 
 ### LED 상태 확인

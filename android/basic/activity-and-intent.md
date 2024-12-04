@@ -14,7 +14,7 @@
   * 사용자가 앱 아이콘을 클릭, 상단 Notification 클릭, 공유하기 또는 파일 열기 등 앱을 실행 시킬 수 있는 진입점
   * new 연산을 통해 개발자가 직접 객체를 생성할 수 없다. -> 생명 주기를 안드로이드 운영체제가 관리
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 앱이 가진 Component의 정보를 안드로이드 시스템이 알아야 한다.
   * AndroidManifest.xml
@@ -38,7 +38,7 @@
 * 반대 순서
   * onPause -> onStop -> onDestroy
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Logcat
 
