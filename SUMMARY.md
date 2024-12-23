@@ -8,6 +8,11 @@
   * [Device-specific commands](network-tech-note/actual-equipment/device-specific-commands.md)
   * [Check Dell Switch Equipment](network-tech-note/actual-equipment/check-dell-switch-equipment.md)
   * [Firmware Update](network-tech-note/actual-equipment/firmware-update.md)
+* [Industrial Switch ERPS Setting](network-tech-note/industrial-switch-erps-setting/README.md)
+  * [ONV](network-tech-note/industrial-switch-erps-setting/onv.md)
+  * [DASAN](network-tech-note/industrial-switch-erps-setting/dasan.md)
+  * [MONAD](network-tech-note/industrial-switch-erps-setting/monad.md)
+  * [SUNGSAM](network-tech-note/industrial-switch-erps-setting/sungsam.md)
 
 ## PROJECT
 
