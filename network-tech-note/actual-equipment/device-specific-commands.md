@@ -38,7 +38,7 @@
 | show interfaces status                                | 인터페이스 상태   |
 | show environment                                      | 환경 상태 확인   |
 | show logging                                          | 로그 확인      |
-| show lldp neighbors                                   | LLDP 확인    |
+| show lldp neighbors                                   | 이웃하는 장비 확인 |
 
 
 
